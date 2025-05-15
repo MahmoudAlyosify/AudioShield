@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms, models
 from torchvision.models import ResNet18_Weights
+from sklearn.metrics import classification_report
 import matplotlib.pyplot as plt
 import numpy as np
 import os
@@ -104,6 +105,9 @@ def validate(model, loader, criterion, device):
     total_loss = 0
     correct = 0
     total = 0
+    all_preds = []
+    all_labels = []
+
     with torch.no_grad():
         with tqdm(loader, desc="Validation") as pbar:
             for images, labels in pbar:
@@ -112,10 +116,19 @@ def validate(model, loader, criterion, device):
                 loss = criterion(outputs, labels)
                 total_loss += loss.item()
                 preds = outputs.argmax(dim=1)
+
+                all_preds.extend(preds.cpu().numpy())
+                all_labels.extend(labels.cpu().numpy())
+
                 correct += (preds == labels).sum().item()
                 total += labels.size(0)
                 pbar.set_postfix(loss=total_loss / (pbar.n + 1), acc=100 * correct / total)
+
+    print("\nClassification Report:")
+    print(classification_report(all_labels, all_preds, target_names=class_names, digits=4))
+
     return total_loss / len(loader), 100 * correct / total
+
 
 # 8. Training Loop
 def train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, epochs=30, patience=7):
