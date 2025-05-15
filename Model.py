@@ -191,3 +191,6 @@ def plot_history(history):
 if __name__ == '__main__':
     model, history = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, epochs=30, patience=7)
     plot_history(history)
+
+torch.save(model.state_dict(), "audioshield_cnn.pth")
+print("Model saved as audioshield_cnn.pth")
