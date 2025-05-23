@@ -75,7 +75,7 @@ https://github.com/user-attachments/assets/8686ceb7-0578-41b2-a39c-34e4a52245e3
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your_username/AudioShield.git
+   git clone https://github.com/MahmoudAlyosify/AudioShield.git
    cd AudioShield
 ````
 
@@ -85,11 +85,7 @@ https://github.com/user-attachments/assets/8686ceb7-0578-41b2-a39c-34e4a52245e3
    pip install -r requirements.txt
    ```
 
-3. Place the model file:
-
-   * `best_model (5-22).h5` in the root directory
-
-4. Run the app:
+3. Run the app:
 
    ```bash
    streamlit run app.py
@@ -141,9 +137,9 @@ This project is licensed under the **GNU Affero General Public License v3.0**.
 | Name     | Role                |
 | -------- | ------------------- |
 | Mahmoud  | ML & Development    |
-| Emad     | Data Preparation    |
-| Ahmed    | Audio Preprocessing |
-| Elsayed  | UI & Visualizations |
-| Abdullah | Docs & Reporting    |
+| Emad     |  ML & Development    |
+| Ahmed    |  ML & Development  |
+| Elsayed  |  ML & Development  |
+| Abdullah |  ML & Development   |
 
 ```
