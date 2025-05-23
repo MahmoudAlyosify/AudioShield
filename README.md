@@ -1,60 +1,132 @@
-# AudioShield
+# AudioShield: Deepfake Voice Detection
 
 **Voice Integrity. Audio Security.**
 
-AudioShield is an AI-powered tool designed to detect and flag deepfake or tampered audio. It protects users and organizations by verifying the authenticity of audio content.
+AudioShield is an AI-powered tool that detects deepfake or tampered audio using spectrogram analysis and deep learning. It helps users and organizations verify the authenticity of voice recordings in critical settings such as call centers, financial services, and virtual meetings.
 
 ---
 
-## 🔒 What It Does
+## 📑 Table of Contents
 
-- Detects deepfake or synthetic audio using machine learning.
-- Flags suspicious segments with a confidence score.
-- Visualizes anomalies in audio using spectrograms.
-- Provides a simple interface for uploading and analyzing files.
-
----
-
-## 🛡 Use Cases
-
-- Secure call centers against voice fraud.
-- Protect virtual meetings from voice impersonation.
-- Prevent identity theft in financial transactions.
-- Build trust in digital banking and e-commerce platforms.
+- [Features](#features)
+- [Project Video](#project-video)
+- [How It Works](#how-it-works)
+- [Tech Stack](#tech-stack)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+- [Team](#team)
 
 ---
 
-## ⚙️ How It Works
+## 🚀 Features
 
-1. **Input**: Upload or record audio (WAV, MP3).
-2. **Preprocessing**: Normalize, clean, and segment audio.
-3. **Feature Extraction**: Extract MFCCs and acoustic patterns.
-4. **Detection**: Run the model to classify audio as real or fake.
-5. **Output**: Return a confidence score and highlight suspicious parts.
-
----
-
-## 🚀 Tech Stack
-
-- **Python**
-- **Librosa**, **PyDub**, **Torchaudio**
-- **Scikit-learn**, **PyTorch**
-- **Streamlit** for the user interface
+- Detects AI-generated and synthetic voices
+- Classifies audio as **Real** or **Fake** with a confidence score
+- Converts audio to mel-spectrograms using consistent preprocessing
+- Displays Grad-CAM heatmaps to explain model focus
+- Generates downloadable PDF reports with visual results
+- Built with a simple and intuitive Streamlit interface
 
 ---
 
-## 🧪 Demo
+## 🎥 Project Video
 
-Coming soon — web-based demo and test samples.
+This is a brief video explaining the motivation, design, and implementation of AudioShield:
+
+https://github.com/user-attachments/assets/8686ceb7-0578-41b2-a39c-34e4a52245e3
 
 ---
 
-## 🧠 Future Features
+## 🧠 How It Works
 
-- Deep learning support (CNN on spectrograms)
-- Real-time detection for short clips
-- Multilingual audio analysis
-- Cloud deployment
+1. **Upload Audio**  
+   Accepts `.wav` or `.mp3` files from the user.
+
+2. **Preprocessing**  
+   Audio is converted to a 224×224 mel-spectrogram using `librosa`.
+
+3. **Classification**  
+   A trained CNN model classifies the input as Real or Fake.
+
+4. **Explainability**  
+   Grad-CAM heatmaps show where the model focused when making its decision.
+
+5. **Reporting**  
+   The result, confidence, and spectrogram image are saved into a downloadable PDF.
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer         | Technology             |
+|---------------|-------------------------|
+| Language      | Python                  |
+| Audio         | Librosa, OpenCV         |
+| ML / DL       | TensorFlow / Keras      |
+| Interface     | Streamlit               |
+| Explainability| Grad-CAM                |
+| Reports       | FPDF                    |
+
+---
+
+## 💻 Usage
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your_username/AudioShield.git
+   cd AudioShield
+````
+
+2. Install required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Place the model file:
+
+   * `best_model (5-22).h5` in the root directory
+
+4. Run the app:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+---
+
+## 🗂 Dataset
+
+The AudioShield model was trained on **81,000 mel-spectrogram images** generated from real and fake audio:
+
+* **Training**:
+  30,000 real + 30,000 fake
+
+* **Validation**:
+  8,000 real + 8,000 fake
+
+* **Testing**:
+  2,500 real + 2,500 fake
+
+You can access the dataset from:
+
+* **Kaggle**:
+  [AudioShield - Fake vs Real Spectrogram Dataset](https://www.kaggle.com/datasets/mahmoudalyosify/audioshield-fake-real-audio-spectrogram-dataset)
+
+* **Hugging Face**:
+  [AudioShield Dataset on Hugging Face](https://huggingface.co/datasets/mahmoudalyosify/AudioShield_Fake_Real_Audio_Spectrogram_Dataset)
+
+---
+
+## 🧭 Future Improvements
+
+* Real-time detection of voice deepfakes during calls
+* Support for multilingual and accented audio
+* Cloud deployment and REST API
+* Integration with messaging and social platforms
+* Semantic verification using speech-to-text and NLP
 
 ---
 
@@ -66,9 +138,12 @@ This project is licensed under the **GNU Affero General Public License v3.0**.
 
 ## 👥 Team
 
-Built by:
-1- Mahmoud
-2- Emad
-3- Ahmed
-4- Elsayed
-5- Abdullah
+| Name     | Role                |
+| -------- | ------------------- |
+| Mahmoud  | ML & Development    |
+| Emad     | Data Preparation    |
+| Ahmed    | Audio Preprocessing |
+| Elsayed  | UI & Visualizations |
+| Abdullah | Docs & Reporting    |
+
+```
