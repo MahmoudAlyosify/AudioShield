@@ -77,19 +77,19 @@ https://github.com/user-attachments/assets/8686ceb7-0578-41b2-a39c-34e4a52245e3
    ```bash
    git clone https://github.com/MahmoudAlyosify/AudioShield.git
    cd AudioShield
-````
+
 
 2. Install required packages:
 
    ```bash
    pip install -r requirements.txt
-   ```
+
 
 3. Run the app:
 
    ```bash
    streamlit run app.py
-   ```
+
 
 ---
 
@@ -142,4 +142,4 @@ This project is licensed under the **GNU Affero General Public License v3.0**.
 | Elsayed  |  ML & Development  |
 | Abdullah |  ML & Development   |
 
-```
+
