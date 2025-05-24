@@ -36,6 +36,13 @@ AudioShield is an AI-powered tool that detects deepfake or tampered audio using 
 This is a brief video explaining the motivation, design, and implementation of AudioShield:
 
 https://github.com/user-attachments/assets/8686ceb7-0578-41b2-a39c-34e4a52245e3
+---
+
+## 🎥 Demo
+
+This is a brief video explaining the motivation, design, and implementation of AudioShield:
+
+https://github.com/user-attachments/assets/a3c27aa0-a010-44d6-8d40-b52b279aa711
 
 ---
 
