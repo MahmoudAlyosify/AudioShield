@@ -71,7 +71,7 @@ https://github.com/user-attachments/assets/a3c27aa0-a010-44d6-8d40-b52b279aa711
 | Layer         | Technology             |
 |---------------|-------------------------|
 | Language      | Python                  |
-| Audio         | Librosa, OpenCV         |
+| spectrograms  | Librosa, OpenCV         |
 | ML / DL       | TensorFlow / Keras      |
 | Interface     | Streamlit               |
 | Explainability| Grad-CAM                |
