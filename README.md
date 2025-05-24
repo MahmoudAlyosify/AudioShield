@@ -144,10 +144,10 @@ This project is licensed under the **GNU Affero General Public License v3.0**.
 
 | Name     | Role                |
 | -------- | ------------------- |
-| Mahmoud  | ML & Development    |
-| Emad     |  ML & Development    |
-| Ahmed    |  ML & Development  |
-| Elsayed  |  ML & Development  |
+| Mahmoud  |  ML & Development   |
+| Emad     |  ML & Development   |
+| Ahmed    |  ML & Development   |
+| Elsayed  |  ML & Development   |
 | Abdullah |  ML & Development   |
 
 
