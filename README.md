@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/8686ceb7-0578-41b2-a39c-34e4a52245e3
 
 ---
 
-## 🎥 Demo
+## 🎥 Run Demo
 
 This is a brief video explaining the motivation, design, and implementation of AudioShield:
 
