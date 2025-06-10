@@ -131,6 +131,8 @@ You can access the dataset from:
 * Cloud deployment and REST API
 * Integration with messaging and social platforms
 * Semantic verification using speech-to-text and NLP
+* Enhance the model Architecture
+* Integrate the project in many areas such as helth care , Banks 
 
 ---
 
@@ -148,6 +150,6 @@ This project is licensed under the **GNU Affero General Public License v3.0**.
 | Emad Tamer    |  ML & Development   |
 | Ahmed Nagy   |  ML & Development   |
 | Elsayed Mohamed |  ML & Development   |
-| Abdullah Essam |  ML & Development   |
+| Abdallah Essam |  ML & Development   |
 
 
