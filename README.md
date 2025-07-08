@@ -142,14 +142,5 @@ This project is licensed under the **GNU Affero General Public License v3.0**.
 
 ---
 
-## 👥 Team
-
-| Name     | Role                |
-| -------- | ------------------- |
-| Mahmoud  |  ML & Development   |
-| Emad Tamer    |  ML & Development   |
-| Ahmed Nagy   |  ML & Development   |
-| Elsayed Mohamed |  ML & Development   |
-| Abdallah Essam |  ML & Development   |
 
 
